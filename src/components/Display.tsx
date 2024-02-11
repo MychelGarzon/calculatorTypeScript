@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 const StyledDisplay = styled.div`
- background-color: #282c34;
+ background-color: orange;
  padding: 50px;
  font-size: 20px;
  border-radius: 5px;

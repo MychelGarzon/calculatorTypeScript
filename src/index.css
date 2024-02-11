@@ -41,4 +41,10 @@ input {
   width: 100%;
   height: 2rem;
   font-size: larger;
+  background-color: bisque;
+  color: #000;
+}
+
+.calculator {
+  background-color: wheat;
 }
