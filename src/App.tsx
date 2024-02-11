@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Display from './Display';
-import Button from './Button';
+import Display from './components/Display';
+import Button from './components/Button';
 
 interface CalculatorState {
   currentInput: string;
@@ -120,7 +120,7 @@ const App: React.FC = () => {
         <Button label="+" onClick={() => handleOperator('+')} />
       </div>
       <div className="button-row">
-        <Button label="+/-" onClick={() => addDigit('+/-')} />
+        <Button label="+" onClick={() => addDigit('+/-')} />
         <Button label="0" onClick={() => addDigit('0')} />
         <Button label="." onClick={() => addDigit('.')} />
         <Button label="=" onClick={calculate} />
