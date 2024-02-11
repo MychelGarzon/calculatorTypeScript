@@ -96,34 +96,40 @@ const App: React.FC = () => {
     <div className="calculator">
       <Display value={state.currentInput} />
       <div className="button-row">
-        <Button label="C" onClick={clearState} />
-        <Button label="()" onClick={() => addDigit('()')} />
+        <Button label="(" onClick={() => addDigit('(')} />
+        <Button label=")" onClick={() => addDigit(')')} />
         <Button label="%" onClick={() => addDigit('%')} />
-        <Button label="/" onClick={() => addDigit('/')} />
+        <Button label="C" onClick={clearState} />
       </div>
       <div className="button-row">
         <Button label="7" onClick={() => addDigit('7')} />
         <Button label="8" onClick={() => addDigit('8')} />
         <Button label="9" onClick={() => addDigit('9')} />
-        <Button label="X" onClick={() => handleOperator('*')} />
+        <Button label="/" onClick={() => addDigit('/')} />
+
       </div>
       <div className="button-row">
         <Button label="4" onClick={() => addDigit('4')} />
         <Button label="5" onClick={() => addDigit('5')} />
         <Button label="6" onClick={() => addDigit('6')} />
-        <Button label="-" onClick={() => handleOperator('-')} />
+        <Button label="x" onClick={() => handleOperator('*')} />
+
       </div>
       <div className="button-row">
         <Button label="1" onClick={() => addDigit('1')} />
         <Button label="2" onClick={() => addDigit('2')} />
         <Button label="3" onClick={() => addDigit('3')} />
-        <Button label="+" onClick={() => handleOperator('+')} />
+        <Button label="-" onClick={() => handleOperator('-')} />
+
       </div>
       <div className="button-row">
-        <Button label="+" onClick={() => addDigit('+/-')} />
+
+      
         <Button label="0" onClick={() => addDigit('0')} />
         <Button label="." onClick={() => addDigit('.')} />
         <Button label="=" onClick={calculate} />
+        <Button label="+" onClick={() => handleOperator('+')} />
+
       </div>
     </div>
   );
