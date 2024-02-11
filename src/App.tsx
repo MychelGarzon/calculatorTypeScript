@@ -43,9 +43,9 @@ const App: React.FC = () => {
         case '/':
           result = parseFloat(state.previousInput) / parseFloat(state.currentInput);
           break;
-        case '%':
-          result = (parseFloat(state.previousInput) / 100) * parseFloat(state.currentInput);
-          break;
+          case '%':
+            result = parseFloat(state.currentInput) / 100;
+            break;
         default:
           return;
       }
@@ -98,14 +98,14 @@ const App: React.FC = () => {
       <div className="button-row">
         <Button label="(" onClick={() => addDigit('(')} />
         <Button label=")" onClick={() => addDigit(')')} />
-        <Button label="%" onClick={() => addDigit('%')} />
+        <Button label="%" onClick={() => handleOperator('%')} />
         <Button label="C" onClick={clearState} />
       </div>
       <div className="button-row">
         <Button label="7" onClick={() => addDigit('7')} />
         <Button label="8" onClick={() => addDigit('8')} />
         <Button label="9" onClick={() => addDigit('9')} />
-        <Button label="/" onClick={() => addDigit('/')} />
+        <Button label="/" onClick={() => handleOperator('/')} />
 
       </div>
       <div className="button-row">

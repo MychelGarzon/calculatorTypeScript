@@ -11,12 +11,13 @@ const StyledDisplay = styled.div`
 
 interface DisplayProps {
     value: string;
-    }
+}
 
-const Display : React.FC<DisplayProps> = ({ value }) => {
+const Display: React.FC<DisplayProps> = ({ value }) => {
+
 return (
 <StyledDisplay className="display">
-<input type="text" value={value} />
+<input type="text" defaultValue={value} />
 </StyledDisplay>
 );
 }
