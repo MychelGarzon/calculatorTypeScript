@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 const StyledDisplay = styled.div`
- background-color: orange;
+ background-color: #968193;
  padding: 50px;
  font-size: 20px;
  border-radius: 5px;
@@ -16,6 +16,8 @@ interface DisplayProps {
 const Display: React.FC<DisplayProps> = ({ value }) => {
 
 return (
+
+    
 <StyledDisplay className="display">
 <input type="text" defaultValue={value} />
 </StyledDisplay>

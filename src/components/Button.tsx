@@ -9,7 +9,7 @@ border: 1px solid transparent;
 margin: 1rem;
 font-size: 1em;
 font-family: inherit;
-background-color: #1a1a1a;
+background-color: #526B69;
 cursor: pointer;
 transition: border-color 0.25s;
 
